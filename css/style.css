@@ -99,9 +99,27 @@
   font-size: 22px;
 }
 
-li #delete{
+.ico-box{
+  height: 100%;
+  background-color: #fff;
+}
+
+.ico-box #delete,
+.ico-box #edit,
+.ico-box #restore,
+.ico-box #delete-right{
   vertical-align: middle;
   background-color: #fff;
   color: black;
+  font-size: 18px;
+}
+
+.ico-box #delete,
+.ico-box #delete-right{
+  color: #970000;
+}
+
+.right-box #restore{
+  color: #005a00;
 }
 

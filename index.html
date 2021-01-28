@@ -24,17 +24,28 @@
     <div class="main">
       <div class="left-box">
         <h3>item list</h3>
-        <i class="fas fa-trash-alt" title="delete all"></i>
+        <i class="fas fa-trash-alt" title="delete all" @click="deleteAll"></i>
         <ul>
-          <li v-for="(e, i) in item" v-if="item.length > 0">{{e}} <i class="far fa-minus-square" id="delete" title="delete"></i></li>
+          <li v-for="(e, i) in item" v-if="item.length > 0">{{e}} 
+            <div class="ico-box">
+              <i class="far fa-edit" id="edit" title="edit" @click="editItem(i)"></i>
+              <i class="far fa-minus-square" id="delete" title="delete" @click="deleteItem(i)"></i>
+            </div>
+          </li>
           <li v-if="item.length == 0">You have no items</li>
         </ul>
       </div>
       <div class="right-box">
         <h3>deleted item</h3>
-        <i class="fas fa-trash-alt" title="delete all"></i>
+        <i class="fas fa-trash-alt" title="trash it for good" @click="trashAll"></i>
         <ul>
-          <li>item 1 <i class="far fa-minus-square" id="delete" title="delete"></i></li>
+          <li v-for="(e, i) in deleted" v-if="deleted.length > 0">{{e}} 
+            <div class="ico-box">
+              <i class="far fa-plus-square" title="restore" id="restore" @click="restoreItem(i)"></i>
+              <i class="far fa-minus-square" id="delete-right" title="delete" @click="trashItem(i)"></i>
+            </div>
+          </li>
+          <li v-if="deleted.length == 0">You have no deleted items</li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #dedede;
+}
+
+.main-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-top .title-box{
+  width: 200px;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+.title-box h1{
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: rgb(100, 100, 100);
+}
+
+.main-top .input-box{
+  margin-left: 60px;
+}
+
+.input-box input,
+.input-box button{
+  margin-right: 30px;
+  padding: 10px;
+  border: 2px solid rgb(100, 100, 100);
+  background-color: #fff;
+}
+
+.input-box button{
+  cursor: pointer;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  border: 2px solid white;
+}
+
+.input-box button:active{
+  color: black;
+  background-color: #fff;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-box,
+.right-box{
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 1px black;
+  border: 2px solid white;
+  border-radius: 5px;
+  flex-basis: 40%;
+  line-height: 50px;
+  background-color: rgb(100, 100, 100);
+}
+
+.left-box h3,
+.right-box h3{
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.left-box i,
+.right-box i{
+  font-size: 25px;
+  padding: 0 10px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  cursor: pointer;
+}
+
+.left-box li,
+.right-box li{
+  background-color: #fff;
+  list-style: none;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li #delete{
+  vertical-align: middle;
+  background-color: #fff;
+  color: black;
+}
+

@@ -94,6 +94,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
 }
 
 li #delete{
